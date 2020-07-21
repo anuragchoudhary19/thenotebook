@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({
 app.use(session({
   secret: "I am ironman.",
   resave: false,
-  saveUninitialized: true
+  saveUninitialized: false
 }));
 
 app.use(passport.initialize());
