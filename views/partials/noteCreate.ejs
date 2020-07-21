@@ -1,0 +1,38 @@
+<div class="container-fluid noteArea" >
+    <div class="row">
+
+      <% Notes.forEach(function(note){ %>
+
+       <div class="d-flex justify-content-center col-lg-3 p-2" style="height:15rem;">
+
+         <div class="card shadow-sm mb-2" style="width:18rem;">
+
+           <div class="card-header">  
+
+              <h6 class="card-text "><%=note.noteTitle%></h6>
+
+            </div> 
+
+            <div class="card-body" style="height: 10rem;">  
+
+              <p class="card-text"><%=note.noteContent.substring(0,55)+"..."%>
+              <a href="/Read/<%=note._id%>">Read More</a>
+              </p>
+              
+            </div> 
+                        
+
+              <form action="/Delete" method="GET" style="text-align:right">
+               <input type="hidden" name="name" value="<%=note._id%>">
+               <button type="submit" class="btn btn-link">Detete</button>
+              </form>
+
+           
+
+         </div>
+
+       </div>
+
+       <% }); %>
+    </div>
+ </div> 
