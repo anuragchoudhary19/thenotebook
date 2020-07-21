@@ -4,70 +4,85 @@
    <!-- Login Bar -->
    <nav class="navbar-fixed-top">
 
-     <div class="login">
+      <div class="loginbar form-row d-flex flex-row-reverse">
 
-      <div class="form-row d-flex justify-content-end">
-
-        <div class="col-sm">
-
-          <form class="form-group" action="/login" method="post">
-            <input class="emailLog " type="email" name="username" placeholder="Email" size="28" required autofocus>
-            <input class="passwordLog " type="password" name="password" placeholder="Password " size="12" required>
-            <button class="btn btn-outline-success btn-login btn-sm" type="submit" name="button">Login</button>
-          </form>
-
+        <div class="col col-lg-6 col-md-8 col-sm-12 d-flex  justify-content-center">
+         
+          <form class=" " action="/login" method="post">
+            <div class="form-inline col-12">
+            <div class="col-lg col-sm p-1 ">
+              <div class="d-flex flex-row-reverse ">
+                <input class="form-control m-1" type="email" name="username" placeholder="Email" size="15" required autofocus>
+              </div>              
+            </div>
+            <div class="col-lg col-sm p-1  ">
+              <div class="d-flex flex-row-reverse">
+              <input class="form-control m-1 " type="password" name="password" placeholder="Password " size="15" required>
+             </div>
+            </div>
+            <div class="col-lg-2 col-sm-2 p-1">
+              <div class="d-flex flex-row-reverse">
+                 <button class=" form-control btn btn-success btn-login " type="submit" name="button">Login</button>
+              </div>
+           </div>
+            </div>
+           </form>
         </div>
 
       </div> 
 
-     </div> 
-
    </nav>
 
 
-   <div class="container-fluid brandLogo">
+   <div class="container brandLogo">
      <div class="row">
 
         <!-- Product Name -->
-       <div class="col-lg col-sm col-md heading">
-         <h1 class="notebook">The NoteBook</h1>
-         <h5 class="description">Take a Note</h5>
-     </div>
+       <div class="col heading">
+         <!-- <div class=""> -->
+          <h1 class="notebook">The NoteBook</h1>
+          <h5 class="description">Take a Note</h5>
+         <!-- </div>          -->
+       </div>
 
         <!-- SignUp bar -->
-       <div class="col-lg col-sm col-md">
+        <div class="col d-flex justify-content-center" >                
 
-
-         <form class="form-group" action="/signup" method="post">
-
-            <!-- Name input form -->
-            <div class=" form-row d-flex justify-content-start">
-              <input class="top is-valid" type="text" name="fname"  pattern="[A-Za-z]" placeholder="First Name" size="18" required autofocus>
-              <input class="middle is-valid" type="text" name="lname" pattern="[A-Za-z]" placeholder="Last Name" size="20" required>
-           </div>
-
-           <!-- Email input form -->
-           <div class="form-row">
-             <input class="bottom" type="email" name="username" size="44" placeholder="Email" autocomplete="off" required>
-           </div>
-
-           <!-- Password input form -->
-           <div class="form-row">
-             <input class="password" type="password" name="password" size="44" autocomplete="off" placeholder="Password (min 8 characters)" maxlength="12" minlength="8" required>
-           </div>
-
-           <!-- Password Re enter form -->
-           <div class="form-row">
-             <input class="password" type="password" name="passwordMatch" size="44" autocomplete="off" placeholder="Re-enter Password" maxlength="12" minlength="8" required>
-           </div>
-
-            <!-- Submit button  -->
-           <div class="form-row">
-             <button class="btn btn-outline-success btn-signup" type="submit" name="submit">Sign Up</button>
-           </div>
-
-         </form>
-       </div>
+            
+             <form class="" action="/signup" method="post">
+              <div class="form-group">
+               <!-- Name input form -->
+               <div class="row ">
+                 <input class="form-control" type="text" name="fname"  pattern="[A-Za-z]" placeholder="First Name" size="18" required autofocus>
+                 <input class="form-control" type="text" name="lname" pattern="[A-Za-z]" placeholder="Last Name" size="20" required>
+              </div>
+   
+              <!-- Email input form -->
+              <div class="row">
+                <input class="form-control" type="email" name="username" size="44" placeholder="Email" autocomplete="off" required>
+              </div>
+   
+              <!-- Password input form -->
+              <div class="row">
+                <input class="form-control" type="password" name="password" size="44" autocomplete="off" placeholder="Password (min 8 characters)" maxlength="12" minlength="8" required>
+              </div>
+   
+              <!-- Password Re enter form -->
+              <div class="row">
+                <input class="form-control" type="password" name="passwordMatch" size="44" autocomplete="off" placeholder="Re-enter Password" maxlength="12" minlength="8" required>
+              </div>
+   
+               <!-- Submit button  -->
+              <div class="row">
+                <button class="  btn btn-outline-success btn-signup" type="submit" name="submit">Sign Up</button>
+              </div>
+            </div>
+            </form>
+            
+            
+          
+        </div>
+       
      </div>
    </div>
 
