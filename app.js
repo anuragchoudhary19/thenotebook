@@ -110,6 +110,10 @@ app.post("/signup", function(req, res) {
 
 });
 
+app.get("/signupPage",function(req,res){
+  res.render("signuppage");
+});
+
 app.post("/login", function(req, res) {
 
   const user = new User({
@@ -176,6 +180,8 @@ let port = process.env.PORT;
 if (port == null || port == "") {
   port = 8000;
 }
+
+
 
 
 app.listen(port, function() {
