@@ -38,15 +38,16 @@
      <div class="row">
 
         <!-- Product Name -->
-       <div class="col heading">
-         <!-- <div class=""> -->
-          <h1 class="notebook">The NoteBook</h1>
+       <div class="col heading ">
+        
+          <h1 class="notebook d-none d-lg-block ">The NoteBook</h1>
+          <h1 class="notebookSM d-lg-none ">The NoteBook</h1>
           <h5 class="description">Take a Note</h5>
-         <!-- </div>          -->
+         
        </div>
 
         <!-- SignUp bar -->
-        <div class="col d-flex justify-content-center d-sm-none d-md-block" >                
+        <div class="col d-lg-flex justify-content-center d-none d-sm-none d-md-block " >                
 
             
              <form class="" action="/signup" method="post">
@@ -78,12 +79,26 @@
               </div>
             </div>
             </form>
-            
-            
-          
+              
         </div>
        
      </div>
+   </div>
+
+   <div class="container-fluid signupbar d-sm-flex 	">
+       <div class="form-row form-group ">
+          <div class="col-sm-12">
+            <div class="form-inline d-flex justify-content-center">
+              <div class="form-row p-1 m-2">
+                <h5 class="description">New User ? </h5>
+              </div>              
+              <div class="form-row p-1 m-2 ">
+                <a class="btn btn-success btn-block "href="" role="button">SignUp</a>
+              </div>
+             
+            </div>           
+          </div>
+       </div>
    </div>
 
    <%- include("partials/footer") %>

@@ -8,6 +8,12 @@ body{
   margin-top: 1rem;
 }
 
+.signupbar{
+  position: relative;
+  align-items: center;
+  margin-top: 4rem;
+}
+
 
 
 
@@ -17,7 +23,8 @@ body{
 }
 .description{
   color: #fff;
-  margin-left: 35px;
+  margin-top: 1rem;
+  
 }
 .form{
   align-content: center;
@@ -34,6 +41,14 @@ body{
   text-align: center;
 }
 
+.notebookSM{
+  font-size: 4rem;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+}
+
+
 .brand{
   color: #fff;
 
@@ -44,9 +59,8 @@ body{
 } */
 
 .brandLogo{
-  margin-top: 10rem;
+  margin-top: 8rem;
 }
-
 
 
 
@@ -77,15 +91,6 @@ body{
   border-radius: 2px;
   border: 0px;
 }
-
-/* .btn-login{
-  position: relative;
- 
-  margin-bottom: 5px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-} */
-
 
 
 
