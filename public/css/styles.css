@@ -21,8 +21,7 @@ body{
 @media screen and (max-width:768px){
   .loginbar{
     margin-right: 2rem;
-    margin-left: 2rem;
-    justify-items: center;
+    margin-left: 2rem;    
   }
   }
 
@@ -37,14 +36,14 @@ body{
 
 .heading{
   text-align: center;
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
 }
-.description{
-  
+
+/* .description{  
   color: #fff;
   margin-top: 1rem;
   
-}
+} */
 .form{
   align-content: center;
 }
