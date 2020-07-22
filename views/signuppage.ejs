@@ -1,6 +1,79 @@
 <%- include("partials/header") %>
 
+ 
+        <!-- SignUp bar -->
+        <div class="d-lg-flex justify-content-center d-lg-none " >                
 
+            
+            <form class="" action="/signup" method="post">
+             <div class="">
+              <!-- Name input form -->
+              <div class=" form-inline col-lg col-sm col-md m-0">
+                <div class=" mr-1">
+                 <div class="d-flex flex-row mt-1 ml-1 textColor">
+                   <label for="firstName">First Name</label>
+                 </div>
+                  <div class="d-flex flex-row-reverse">
+                     <input class="form-control" type="text" name="fname" id="firstName"  placeholder="First Name" size="18" required autofocus>
+                  </div>
+                </div>
+                <div class="ml-1">
+                 <div class="d-flex flex-row mt-1 ml-1 textColor">
+                   <label for="lastName">Last Name</label>
+                 </div>
+                  <div class="d-flex flex-row-reverse">
+                   <input class="form-control" type="text" name="lname" id="lastName" placeholder="Last Name" size="18" required>
+                  </div>
+                </div>                
+                
+               </div>
+
+               <div class=" form-inline col-lg col-sm col-md m-0">
+                 <div class="m-0">
+                   <div class="d-flex flex-row mt-1 ml-1 textColor">
+                     <label for="email">Email</label>
+                   </div>
+                    <div class="d-flex flex-row-reverse">
+                     <input class="form-control" type="email" name="username" id="email" size="46" placeholder="Email" autocomplete="off" required>
+                    </div>
+                  </div>
+               </div>
+
+
+               <div class=" form-inline col-lg col-sm col-md m-0">
+                 <div class="">
+                   <div class="d-flex flex-row mt-1 ml-1 textColor">
+                     <label for="password">Password (Min 8 characters)</label>
+                   </div>
+                    <div class="d-flex flex-row-reverse">
+                     <input class="form-control" type="password" name="password" id="password" size="46" autocomplete="off" placeholder="Password (min 8 characters)" minlength="8" required>
+                    </div>
+                  </div>
+               </div>
+
+               <div class=" form-inline col-lg col-sm col-md m-0">
+                 <div class="">
+                   <div class="d-flex flex-row mt-1 ml-1 textColor">
+                     <label for="reEnterPassword">Re-enter Password</label>
+                   </div>
+                    <div class="d-flex flex-row-reverse">
+                     <input class="form-control" type="password" name="passwordMatch" id="reEnterPassword" size="46" autocomplete="off" placeholder="Re-enter Password" minlength="8" required>
+                    </div>
+                  </div>
+               </div>
+
+               <div class="d-flex flex-row col-lg-4 mt-2">
+                 <div class="">
+                   <button class="form-control btn btn-success btn-md" type="submit" name="submit">Sign Up</button>
+                 </div>
+              </div>
+
+                           
+                
+             
+              </form>
+             
+       </div>
 
 
 <%- include("partials/footer") %>
