@@ -60,7 +60,8 @@ body{
 }
 
 .notebookSM{
-  font-size: 4rem;
+  margin-top: -1rem;
+  font-size: 3rem;
   width: 100%;
   color: #fff;
   text-align: center;
