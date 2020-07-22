@@ -6,22 +6,28 @@
 
       <div class="loginbar form-row d-flex flex-row-reverse">
 
-        <div class="col col-lg-6 col-md-8 col-sm-12 d-flex  justify-content-center">
+        <div class="col col-lg-6 col-md col-sm d-flex justify-content-left">
          
           <form class=" " action="/login" method="post">
-            <div class="form-inline col-12">
-            <div class="col-lg col-sm p-1 ">
-              <div class="d-flex flex-row-reverse ">
-                <input class="form-control m-1" type="email" name="username" placeholder="Email" size="15" required autofocus>
+            <div class="form-inline ">
+            <div class="col-lg col-sm col-md p-1 ">
+              <div class="d-flex flex-row mt-1 ml-1 textColor">
+                <label for="loginEmail">Email</label>
+              </div>              
+              <div class="d-flex flex-row-reverse ">                
+                <input class="form-control m-1" type="email" name="username" id="loginEmail" placeholder="Email" size="15" required autofocus>
               </div>              
             </div>
-            <div class="col-lg col-sm p-1  ">
+            <div class="col-lg col-sm col-md p-1  ">
+              <div class="d-flex flex-row pb-0 ml-1 textColor">
+                <label for="loginPassword">Password</label>
+              </div> 
               <div class="d-flex flex-row-reverse">
-              <input class="form-control m-1 " type="password" name="password" placeholder="Password " size="15" required>
+              <input class="form-control m-1 " type="password" name="password" id="loginPassword"placeholder="Password " size="15" required>
              </div>
             </div>
-            <div class="col-lg-2 col-sm-2 p-1">
-              <div class="d-flex flex-row-reverse">
+            <div class="col-lg-2 col-sm-2 col-md-2 p-1">
+              <div class="d-flex flex-row-reverse mt-3 mb-n2">
                  <button class=" form-control btn btn-success btn-login " type="submit" name="button">Login</button>
               </div>
            </div>
@@ -85,6 +91,8 @@
      </div>
    </div>
 
+
+   <!-- SignUp Bar -->
    <div class="container signupbar">
        <div class="d-lg-none">
           <div class="col-sm col-md">
@@ -94,7 +102,7 @@
               <div class="p-1 m-2">
                 <a class="btn btn-success btn-block "href="/signup" role="button">SignUp</a>
               </div>        
-              </div>
+          </div>
        </div>
    </div>
 

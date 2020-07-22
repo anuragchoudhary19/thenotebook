@@ -2,11 +2,29 @@ body{
   background-color: #a8df65;
 }
 
+.textColor{
+  color: #fff;
+}
+
 .loginbar{
   margin-right: 0rem;
-  margin-left: 0rem;
-  margin-top: 1rem;
+  margin-left: 11rem;  
 }
+
+@media screen and (max-width:576px){
+.loginbar{
+  margin-right: 2rem;
+  margin-left: 2rem;  
+}
+}
+
+@media screen and (max-width:768px){
+  .loginbar{
+    margin-right: 2rem;
+    margin-left: 2rem;
+    justify-items: center;
+  }
+  }
 
 .signupbar{
   position: relative;
@@ -22,6 +40,7 @@ body{
   margin-left: 1rem;
 }
 .description{
+  
   color: #fff;
   margin-top: 1rem;
   
