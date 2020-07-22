@@ -91,6 +91,10 @@ app.get("/logout", function(req, res) {
   res.redirect("/");
 });
 
+app.get("/index",function(req,res){
+  res.redirect("/");
+});
+
 app.post("/signup", function(req, res) {
 
   User.register({

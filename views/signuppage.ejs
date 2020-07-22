@@ -1,14 +1,21 @@
 <%- include("partials/header") %>
+<nav class="navbar navbar-expand-md navbar-light d-flex justify-content-center d-lg-none" style="background-color: #30be20;">
+<div class="navbar-header ">
+    <a class="navbar-brand" href="/index"><h4 class="brand">The NoteBook</h4></a>
+  </div>
+</nav>
 
  
-        <!-- SignUp bar -->
-        <div class="d-lg-flex justify-content-center d-lg-none " >                
-
+         <div class="container-fluid d-lg-none" style="text-align: center;">                
+             
+            <div style="margin-top: 3rem; margin-bottom: 2rem; text-align:center;">
+                <h5 class="textColor">Signup and drop your notes.</h5>
+            </div>
             
             <form class="" action="/signup" method="post">
-             <div class="">
+             <div style="display: inline-block;">
               <!-- Name input form -->
-              <div class=" form-inline col-lg col-sm col-md m-0">
+              <div class=" form-inline  col-lg col-sm col-md m-0">
                 <div class=" mr-1">
                  <div class="d-flex flex-row mt-1 ml-1 textColor">
                    <label for="firstName">First Name</label>
