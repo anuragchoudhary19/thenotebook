@@ -8,20 +8,23 @@ body{
 
 .loginbar{
   margin-right: 0rem;
-  margin-left: 11rem;  
+  margin-left: 11rem; 
+  justify-content: center; 
 }
 
 @media screen and (max-width:576px){
 .loginbar{
   margin-right: 2rem;
-  margin-left: 2rem;  
+  margin-left: 2rem; 
+  justify-content: center; 
 }
 }
 
 @media screen and (max-width:768px){
   .loginbar{
     margin-right: 2rem;
-    margin-left: 2rem;    
+    margin-left: 2rem;
+    justify-content: center;    
   }
   }
 
