@@ -6,4 +6,45 @@
 
 
 
+<div class="d-flex justify-content-center col-lg-3 p-2" style="height:15rem;">
+
+    <div class="card shadow-sm mb-2" style="width:18rem;">
+
+      <div class="card-header">  
+
+         
+
+       </div> 
+
+       <div class="card-body" style="height: 10rem;">  
+
+         
+         <a href="">Read More</a>
+         </p>
+         
+       </div> 
+                   
+
+         <form action="/Delete" method="GET" style="text-align:right">
+          <input type="hidden" name="name" value="<%=docs._id%>">
+          <button type="submit" class="btn btn-link">Detete</button>
+         </form>
+   
+    </div>
+
+  </div>
+
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h6 class="card-text "><%=docs.noteTitle%></h6>
+    </div>
+    <div>
+        <p class="card-text"><%=docs.noteContent%></p>
+    </div>
+  </div>
+
+
+
+
 <%- include("partials/footer") %>

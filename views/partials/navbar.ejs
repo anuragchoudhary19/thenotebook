@@ -1,15 +1,18 @@
-<nav class="navbar navbar-expand-md navbar-light " style="background-color: #30be20;">
+<nav class="navbar navbar-expand-md nvabar-light" style="background-color: #30be20;">
   
     <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="/main"><h4 class="brand">The NoteBook</h4></a>
+      <div class="navbar-header textColor">
+        <a class="navbar-brand" href="/main"><h4 class=" brand">The NoteBook</h4></a>
       </div>
   
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="navbar-toggler-icon"></span>    
       </button>
     
-      
+      <form class="form-group">
+        <input class="form-control mr-1" type="search" placeholder="Search through notes" aria-label="Search">
+        <button class="btn btn-outline-success btn-sm mr-1 " type="submit"><h6 class="buttonText">Search</h6></button>
+      </form>
      
       <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
         <ul class=" nav form-inline ">
@@ -17,10 +20,7 @@
             <h6 class="brand text-capitalize">Hello, <%=userName%></h6>
           </li>
           <li class="nav-item mr-2">
-            <form class="form-group">
-              <input class="form-control mr-1" type="search" placeholder="Search through notes" aria-label="Search">
-              <button class="btn btn-outline-success btn-sm mr-1 " type="submit"><h6 class="buttonText">Search</h6></button>
-            </form>
+            
           </li>
           <li class="nav-item mr-1">
             <form class="form-group" action="/logout" method="get">

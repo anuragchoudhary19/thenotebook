@@ -163,22 +163,43 @@ app.get("/Delete",function(req,res){
 
 
 
-app.get("/Read/:id",function(req,res){
-  console.log(req.params.id);
-  Note.findById(req.params.id,function(err,docs){
+app.get("/view/:id",function(req,res){
+   Note.findById(req.params.id,function(err,docs){
     if(err){
       console.log(err);
     }else{  
-          res.redirect("/viewNote")
+            res.render("viewNote",{
+            docs:docs,
+            userName:req.user.firstName 
+          });
     }
   });
 });
 
-app.get("/viewNote",function(req,res){
-  res.render("viewNote",{
-    userName:req.user.firstName
-  });
-});
+// app.get("viewNote", function(req,res){
+     
+   
+// });
+
+// app.get("/Read/:id",function(req,res){
+   
+//   if (req.isAuthenticated()) {
+
+//     Note.find({_id:req.params.id},function(err,result){
+//       if(err){
+//         console.log(err);
+//       }else{
+//         res.render("viewNote",{
+//           Notes:result,
+//           userName:req.user.firstName     
+                    
+//         });
+//       }
+//     });
+    
+//   }
+  
+// });
 
 let port = process.env.PORT;
 if (port == null || port == "") {
