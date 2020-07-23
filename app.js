@@ -65,15 +65,16 @@ const Note =new mongoose.model("Note",noteSchema);
 
 function greeting(){
   let date= new Date();
-  let localTime= date.getHours();
+  let localTime= date.toLocaleTimeString();
 
-  if(localTime<12){
-    return ("Good Morning");
-  }else if(localTime<18){
-    return("Good Afternoon");
-  }else{
-    return("Good Evening");
-  }
+  // if(localTime<12){
+  //   return ("Good Morning");
+  // }else if(localTime<18){
+  //   return("Good Afternoon");
+  // }else{
+  //   return("Good Evening");
+  // }
+  return(localTime);
 };
 
 app.get("/", function(req, res) {
