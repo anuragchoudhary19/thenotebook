@@ -82,7 +82,7 @@ app.get("/", function(req, res) {
 
 app.get("/home", function(req, res) {
     
-  const message = greeting();
+  let message = greeting();
   if (req.isAuthenticated()) {
 
     Note.find({noteId:req.user._id},function(err,result){
