@@ -74,7 +74,7 @@ function greeting(){
   // }else{
   //   return("Good Evening");
   // }
-  return(localTime);
+  return(date);
 };
 
 app.get("/", function(req, res) {
