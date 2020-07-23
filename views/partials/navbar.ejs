@@ -1,34 +1,47 @@
-<nav class="navbar navbar-expand-md nvabar-light" style="background-color: #30be20;">
+<nav class="navbar navbar-expand-md navbar-dark" style="background-color: #30be20;">
   
-    <div class="container-fluid">
-      <div class="navbar-header textColor">
-        <a class="navbar-brand" href="/main"><h4 class=" brand">The NoteBook</h4></a>
-      </div>
-  
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="navbar-toggler-icon"></span>    
-      </button>
-    
-      <form class="form-group">
-        <input class="form-control mr-1" type="search" placeholder="Search through notes" aria-label="Search">
-        <button class="btn btn-outline-success btn-sm mr-1 " type="submit"><h6 class="buttonText">Search</h6></button>
-      </form>
-     
-      <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-        <ul class=" nav form-inline ">
-          <li class="nav-item mr-2 mt-3">
-            <h6 class="brand text-capitalize">Hello, <%=userName%></h6>
-          </li>
-          <li class="nav-item mr-2">
-            
-          </li>
-          <li class="nav-item mr-1">
-            <form class="form-group" action="/logout" method="get">
-              <button class="btn btn-outline-success mr-1 " type="submit"><h6 class="buttonText">Logout</h6></button>
-            </form>
-          </li>     
-        </ul>
-      </div>
+    <!-- <div class="d-flex"> -->
       
-      </div>   
+
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/home"><h5 class="brand">The NoteBook</h5></a>
+        </div>
+
+        <div class="greeting mr-auto">
+          <h6 class="textColor text-capitalize"><%=message%>, <%=userName%></h6>
+        </div>
+
+
+        <!-- Collapse button -->
+      <!-- Collapse on small screen and visible on medium up -->
+       
+      <div class="dropdown float-right ml-auto d-block d-lg-none">
+        <a class="btn btn-success " href="#" id="logout" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         <span class="navbar-toggler-icon"></span>    
+         </a>
+
+         <div class="dropdown-menu" aria-labelledby="logout">
+           <a class="dropdown-item" href="/logout">Logout</a>
+        </div>
+      </div>
+
+     
+     
+   
+   
+   
+
+
+   <!-- Visible in large screen -->
+   <div class="float-right ml-auto d-none d-lg-block">
+       <a class="btn btn-success" role="button" href="/logout">Logout</a>
+   </div>
+                
+      </div>
+    <!-- </div> -->
+      
+      
+        
+   
   </nav>

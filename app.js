@@ -61,19 +61,36 @@ const Note =new mongoose.model("Note",noteSchema);
 
 //get routes
 
+
+
+function greeting(){
+  let date= new Date();
+  let time= date.getHours();
+
+  if(time<12){
+    return ("Good Morning");
+  }else if(time<18){
+    return("Good Afternoon");
+  }else{
+    return("Good Evening");
+  }
+}
+
 app.get("/", function(req, res) {
   res.render("index");
 });
 
-app.get("/main", function(req, res) {
-  
+app.get("/home", function(req, res) {
+    
+  const message = greeting();
   if (req.isAuthenticated()) {
 
     Note.find({noteId:req.user._id},function(err,result){
       if(err){
         console.log(err);
       }else{
-        res.render("main",{
+          res.render("home",{
+          message:message,
           Notes:result,
           userName:req.user.firstName     
                     
@@ -107,7 +124,7 @@ app.post("/signup", function(req, res) {
       res.redirect("/");
     } else {
       passport.authenticate("local")(req, res, function() {
-        res.redirect("/main");
+        res.redirect("/home");
       });
     }
   });
@@ -130,7 +147,7 @@ app.post("/login", function(req, res) {
       console.log(err);
     } else {
       passport.authenticate("local")(req, res, function() {
-        res.redirect("/main");
+        res.redirect("/home");
       });
     }
   });
@@ -145,7 +162,7 @@ app.post("/note", function(req,res){
   });
   console.log(req.user);
   note.save();
-  res.redirect("/main");
+  res.redirect("/home");
 });
 
 app.get("/Delete",function(req,res){
@@ -155,7 +172,7 @@ app.get("/Delete",function(req,res){
          console.log(err);
        }else{
           console.log("deleted");
-          res.redirect("/main");
+          res.redirect("/home");
        }
      });
 

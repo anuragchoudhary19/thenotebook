@@ -2,8 +2,9 @@ body{
   background-color: #a8df65;
 }
 
+
 .textColor{
-  color: #fff;
+  color:whitesmoke
 }
 
 .loginbar{
@@ -33,7 +34,13 @@ body{
   align-items: center;
   margin-top: 8rem;
 }
-
+/* 
+@media screen and (max-width:576px){
+  .greeting{  
+    align-items: flex-end;
+   
+  }
+  } */
 
 
 
@@ -47,6 +54,12 @@ body{
 }
 .position{
   position: relative;
+}
+
+.dropdown-menu{
+  top: 100%;
+  left: -210%;
+  width: auto;
 }
 
 
