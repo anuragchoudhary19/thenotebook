@@ -56,7 +56,7 @@ body{
   position: relative;
 }
 
-.dropdown-menu{
+.logout{
   top: 100%;
   left: -210%;
   width: auto;
